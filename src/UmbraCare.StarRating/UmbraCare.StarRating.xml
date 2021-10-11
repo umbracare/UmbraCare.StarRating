@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<umbPackage>
+	<info>
+		<package>
+			<name>UmbraCare.StarRating</name>
+			<version>8.0.0</version>
+			<iconUrl>https://umbracare.net/media/bttm0c0j/nuget-umbracare-starrating-icon.jpg</iconUrl>
+			<licence url="https://opensource.org/licenses/mit-license.php">MIT License</licence>
+			<url>https://umbracare.net/products/star-rating</url>
+			<requirements type="Strict">
+				<major>8</major>
+				<minor>0</minor>
+				<patch>0</patch>
+			</requirements>
+		</package>
+		<author>
+			<name>Wojciech Tengler, Piotr Bach</name>
+			<website>https://umbracare.net/</website>
+		</author>
+		<readme>
+			<![CDATA[
+      <p>A simple property editor simplifies the rating by enabling an eye-catching star-based plugin. Can be a perfect choice for rating content types such as Product, Book, Movie, Recipe, Local business, Course, Event, How-to, Software Application, etc.</p>
+      ]]>
+		</readme>
+	</info>
+	<files>
+		<file path="bin/Release/net472/UmbraCare.StarRating.dll" orgPath="bin/UmbraCare.StarRating.dll" />
+		<folder path="App_Plugins/UmbraCare/" orgPath="App_Plugins/UmbraCare/" />
+	</files>
+	<Actions />
+	<control />
+	<DocumentTypes />
+	<Templates />
+	<Stylesheets />
+	<Macros />
+	<DictionaryItems />
+	<Languages />
+	<DataTypes />
+</umbPackage>

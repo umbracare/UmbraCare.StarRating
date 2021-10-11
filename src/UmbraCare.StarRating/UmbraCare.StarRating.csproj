@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net472</TargetFramework>
+		<RootNamespace>UmbraCare.StarRating</RootNamespace>
+
+		<IncludeContentInPack>true</IncludeContentInPack>
+		<ContentTargetFolders>content</ContentTargetFolders>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<OutputPath>bin\Debug\</OutputPath>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<OutputPath>bin\Release\</OutputPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="App_Plugins\**\*" />
+		<Compile Remove="**\*" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Include="Controllers\**\*" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="App_Plugins\UmbraCare\StarRating\package.manifest" />
+	  <None Remove="App_Plugins\UmbraCare\StarRating\starrating.controller.js" />
+	  <None Remove="App_Plugins\UmbraCare\StarRating\starrating.html" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Include="Models\StarRatingConstants.cs" />
+	  <Compile Include="PropertyEditors\ValueConverters\StarRatingValueConverter.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="readme.txt" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="UmbracoCms.Core" Version="8.17.0" />
+	</ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+	  <Exec Command="if $(ConfigurationName) == Release (&#xD;&#xA;    nuget pack &quot;$(ProjectDir)UmbraCare.StarRating.nuspec&quot; -OutputDirectory &quot;$(SolutionDir)output&quot;&#xD;&#xA;    UmbPack pack &quot;$(ProjectDir)UmbraCare.StarRating.xml&quot; -o &quot;$(SolutionDir)output&quot;&#xD;&#xA;)" />
+	</Target>
+</Project>

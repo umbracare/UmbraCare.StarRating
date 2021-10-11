@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+	<metadata>
+		<id>UmbraCare.StarRating</id>
+		<version>8.0.0</version>
+		<title>UmbraCare Star Rating</title>
+		<authors>wtengler, piotrbach</authors>
+		<owners>wtengler, piotrbach</owners>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<licenseUrl>https://opensource.org/licenses/mit-license.php</licenseUrl>
+		<projectUrl>https://umbracare.net/products/star-rating</projectUrl>
+		<iconUrl>https://umbracare.net/media/bttm0c0j/nuget-umbracare-starrating-icon.jpg</iconUrl>
+		<icon>icon.jpg</icon>
+		<description>A simple property editor simplifies the rating by enabling an eye-catching star-based plugin. Can be a perfect choice for rating content types such as Product, Book, Movie, Recipe, Local business, Course, Event, How-to, Software Application, etc.</description>
+		<summary>A simple property editor simplifies the rating by enabling an eye-catching star-based plugin. Can be a perfect choice for rating content types such as Product, Book, Movie, Recipe, Local business, Course, Event, How-to, Software Application, etc.</summary>
+		<copyright>Copyright © GD Piotr Bach 2021</copyright>
+		<language>en-US</language>
+		<tags>Umbraco, UmbraCare, StarRating, Star, Stars, Rating, Review, Reviewer, Decimal, Score, Picking, Package, Custom, Property, Editor, Extension, Add-in, Backoffice</tags>
+		<dependencies>
+			<group targetFramework=".NETFramework4.7.2">
+				<dependency id="UmbracoCms" version="[8,9)" />
+				<dependency id="UmbraCare.DedicatedMediaFolder" version="[8,9)" />
+			</group>
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="App_Plugins\UmbraCare\StarRating\assets\images\icon.jpg" target="" />
+		<file src="readme.txt" target="" />
+		<file src="bin\Release\net472\UmbraCare.StarRating.dll" target="lib\net472\UmbraCare.StarRating.dll" />
+		<file src="App_Plugins\UmbraCare\" target="content\App_Plugins\UmbraCare\" />
+	</files>
+</package>

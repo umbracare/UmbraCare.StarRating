@@ -1,0 +1,8 @@
+[
+  {
+    "outputFileName": "App_Plugins/UmbraCare/StarRating/assets/jquery.raty.min.js",
+    "inputFiles": [
+      "App_Plugins/UmbraCare/StarRating/assets/jquery.raty.js"
+    ]
+  }
+]
