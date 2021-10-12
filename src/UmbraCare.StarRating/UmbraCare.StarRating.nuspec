@@ -11,6 +11,7 @@
 		<projectUrl>https://umbracare.net/products/star-rating</projectUrl>
 		<iconUrl>https://umbracare.net/media/bttm0c0j/nuget-umbracare-starrating-icon.jpg</iconUrl>
 		<icon>icon.jpg</icon>
+		<repository type="git" url="https://github.com/umbracare/UmbraCare.StarRating" />
 		<description>A simple property editor simplifies the rating by enabling an eye-catching star-based plugin. Can be a perfect choice for rating content types such as Product, Book, Movie, Recipe, Local business, Course, Event, How-to, Software Application, etc.</description>
 		<summary>A simple property editor simplifies the rating by enabling an eye-catching star-based plugin. Can be a perfect choice for rating content types such as Product, Book, Movie, Recipe, Local business, Course, Event, How-to, Software Application, etc.</summary>
 		<copyright>Copyright © GD Piotr Bach 2021</copyright>
