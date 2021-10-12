@@ -24,6 +24,14 @@ angular.module("umbraco").controller("UmbraCare.StarRatingController", function 
                 && $scope.model.config.readOnly !== "false"
                 && $scope.model.config.readOnly !== false;
 
+            if (!$scope.model.config.hasOwnProperty("numberOfStars")) {
+                $scope.model.config.numberOfStars = 5;
+            }
+
+            if (!$scope.model.config.hasOwnProperty("defaultRating")) {
+                $scope.model.config.defaultRating = 0;
+            }
+
             if ($scope.model.value === null || $scope.model.value === "")
                 $scope.model.value = $scope.model.config.defaultRating
 
