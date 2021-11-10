@@ -1,0 +1,51 @@
+{
+  "propertyEditors": [
+    {
+      "alias": "UmbraCare.StarRating",
+      "name": "UmbraCare.StarRating",
+      "icon": "icon-rate",
+      "group": "Common",
+      "editor": {
+        "view": "~/App_Plugins/UmbraCare/StarRating/starrating.html",
+        "valueType": "DECIMAL"
+      },
+      "prevalues": {
+        "fields": [
+          {
+            "label": "Read-only",
+            "description": "Turns the star rating to read-only mode.",
+            "key": "readOnly",
+            "view": "boolean"
+          },
+          {
+            "label": "Enable half star",
+            "description": "Enables half star selection.",
+            "key": "enableHalfStar",
+            "view": "boolean"
+          },
+          {
+            "label": "The number of stars",
+            "description": "The number of stars that will be presented - maximum rating value.",
+            "key": "numberOfStars",
+            "view": "number"
+          },
+          {
+            "label": "Default rating",
+            "description": "Initial rating presented by stars. You can use 0.5 step when half star is enabled otherwhise the step is 1.",
+            "key": "defaultRating",
+            "view": "decimal"
+          }
+        ]
+      },
+      "defaultConfig": {
+        "readOnly": false,
+        "enableHalfStar": true,
+        "numberOfStars": 5,
+        "defaultRating": 0
+      }
+    }
+  ],
+  "javascript": [
+    "~/App_Plugins/UmbraCare/StarRating/starrating.controller.js"
+  ]
+}
