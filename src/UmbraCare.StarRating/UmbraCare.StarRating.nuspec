@@ -9,8 +9,8 @@
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<licenseUrl>https://opensource.org/licenses/mit-license.php</licenseUrl>
 		<projectUrl>https://umbracare.net/products/star-rating</projectUrl>
-		<iconUrl>https://umbracare.net/media/bttm0c0j/nuget-umbracare-starrating-icon.jpg</iconUrl>
-		<icon>icon.jpg</icon>
+		<iconUrl>https://umbracare.net/media/tjfae2ey/umbracare-star-rating-icon-128x128.png</iconUrl>
+		<icon>icon.png</icon>
 		<repository type="git" url="https://github.com/umbracare/UmbraCare.StarRating" />
 		<description>A simple property editor simplifies the rating by enabling an eye-catching star-based plugin. Can be a perfect choice for rating content types such as Product, Book, Movie, Recipe, Local business, Course, Event, How-to, Software Application, etc.</description>
 		<summary>A simple property editor simplifies the rating by enabling an eye-catching star-based plugin. Can be a perfect choice for rating content types such as Product, Book, Movie, Recipe, Local business, Course, Event, How-to, Software Application, etc.</summary>
@@ -25,7 +25,7 @@
 		</dependencies>
 	</metadata>
 	<files>
-		<file src="App_Plugins\UmbraCare\StarRating\assets\images\icon.jpg" target="" />
+		<file src="App_Plugins\UmbraCare\StarRating\assets\images\icon.png" target="" />
 		<file src="readme.txt" target="" />
 		<file src="bin\Release\net472\UmbraCare.StarRating.dll" target="lib\net472\UmbraCare.StarRating.dll" />
 		<file src="App_Plugins\UmbraCare\" target="content\App_Plugins\UmbraCare\" />

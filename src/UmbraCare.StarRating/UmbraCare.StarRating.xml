@@ -4,7 +4,7 @@
 		<package>
 			<name>UmbraCare.StarRating</name>
 			<version>8.0.0</version>
-			<iconUrl>https://umbracare.net/media/bttm0c0j/nuget-umbracare-starrating-icon.jpg</iconUrl>
+			<iconUrl>https://umbracare.net/media/tjfae2ey/umbracare-star-rating-icon-128x128.png</iconUrl>
 			<licence url="http://www.opensource.org/licenses/MIT">MIT License</licence>
 			<url>https://umbracare.net/products/star-rating</url>
 			<requirements type="Strict">
